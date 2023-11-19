@@ -1,0 +1,182 @@
+<!-- res/layout/about_us_activity.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#D1DBE4"
+    tools:context=".AboutUsActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbarlightstick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbaraboutus"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:navigationIcon="@drawable/baseline_arrow_back_ios_new_24"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logoaksara_bulat"
+            android:contentDescription="App Logo" />
+
+        <TextView
+            android:id="@+id/appNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/coiny"
+            android:text="AKSARA SUARA"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/penulis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appNameTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/coiny"
+            android:text="oleh Dina Fadiyah Putri dan Fatiya Hanun Fadhila"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/descAboutUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/penulis"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Aplikasi Aksara Suara ini dibuat untuk memenuhi Project UTS mata kuliah Aplikasi Bergerak
+. Aksara Suara sendiri memiliki filosofi nama. Yaitu, arti aksara sendiri dalam bahasa Indonesia merujuk kepada simbol atau karakter huruf yang digunakan untuk menulis, maka dari itu konteks 'aksara' disini memiliki artian setiap aksara
+mewakili identitas unik. Melalui perpaduan 'aksara' dan 'suara', aplikasi ini menciptakan keranka kerja yang mencerminkan
+keberagaman dalam dunia musik. Setiap aksara dan suara menggambarkan keunikan dan kebahagiaan dalam mengeksplorasi
+berbagai jenis musik yang dapat dinikmati oleh pengguna"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/photos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descAboutUs"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/photodina"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:contentDescription="Photo 1"
+                            android:src="@drawable/dina" />
+
+                        <TextView
+                            android:id="@+id/namadina"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/photodina"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/chewy"
+                            android:text="Dina Fadiyah Putri"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/nimdina"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/namadina"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/chewy"
+                            android:text="2103421017"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/kelasDina"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nimdina"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/chewy"
+                            android:text="BM - 5A"
+                            android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@android:color/transparent" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/photohanun"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:contentDescription="Photo 2"
+                            android:src="@drawable/hanunn" />
+
+                        <TextView
+                            android:id="@+id/namahanun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/photohanun"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/chewy"
+                            android:text="Fatiya Hanun Fadhila"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/nimhanun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/namahanun"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/chewy"
+                            android:text="2103421038"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/kelasHanun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nimhanun"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/chewy"
+                            android:text="BM - 5A"
+                            android:textSize="12sp" />
+                </RelativeLayout>
+        </LinearLayout>
+</RelativeLayout>
